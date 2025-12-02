@@ -1,8 +1,5 @@
 # Ex04 Places Around Me
-## Name: Abinesh M
-## Ref No:212224040009
-
-
+## Date: 25-09-2025
 ## AIM
 To develop a website to display details about the places around my house.
 
@@ -12,126 +9,172 @@ To develop a website to display details about the places around my house.
 Create a Django admin interface.
 
 ### STEP 2
-Download your city map from Google.
+Download your city map from Google as an image.
 
 ### STEP 3
-Using ```<map>``` tag name the map.
+Insert the image using ```<img>``` tag and link it to the map.
 
 ### STEP 4
-Create clickable regions in the image using ```<area>``` tag.
+Using ```<map>``` tag name the map.
 
 ### STEP 5
-Write HTML programs for all the regions identified.
+Create clickable regions in the image using ```<area>``` tag.
 
 ### STEP 6
+Write HTML programs for all the regions identified.
+
+### STEP 7
 Execute the programs and publish them.
 
 ## CODE
-```
-map.html
-
+### Map HTML 
+```html
 <html>
-    <head>
-        <title>MAP</title>
-    </head>
+<head>
+    <title>My City</title>
+</head>
+<body> 
+    <h1 align="center"><font color="Black"><b>Ambattur</b></font></h1>
+    <h2 align="center"><font color="Black"><b>Kamlesh Y (212224100029)</b></font></h2>
+    <center>
+        <img src="map.png" usemap="#MyCity" height="610" width="1243">
 
-    <body bgcolor="cyan">
-        <h1 align="center">VILLUPURAM -- HARI PRASATH E (25007799)</h1>
-        <br>
-        
-        
-       <img src="map (2).png" usemap="#image-map">
+        <map name="MyCity">
+            <area target="_blank" 
+                  alt="IT park" 
+                  title="IT park" 
+                  href="itpark.html" 
+                  coords="300,200,350,250" 
+                  shape="rect">
 
-<map name="image-map">
-    <area target="" alt="MGR GOVT COLLEGE" title="MGR GOVT COLLEGE" href="clg.html" coords="901,685,592,803" shape="rect">
-    <area target="" alt="VILLUPURAM RAILWAY STATION" title="VILLUPURAM RAILWAY STATION" href="rs.html" coords="922,323,1084,377" shape="rect">
-    <area target="" alt="PANAMPET LAKE" title="PANAMPET LAKE" href="lake.html" coords="1059,738,147" shape="circle">
-    <area target="" alt="VALEESHWARAR TEMPLE" title="VALEESHWARAR TEMPLE" href="temple.html" coords="1603,474,1907,565" shape="rect">
-    <area target="" alt="THENDRAL PARK" title="THENDRAL PARK" href="park.html" coords="765,229,958,308" shape="rect">
-</map>
+            <area target="_blank" 
+                  alt="Ambattur Railway Station" 
+                  title="Ambattur Railway Station" 
+                  href="rail.html" 
+                  coords="500,300,550,350" 
+                  shape="rect">
+
+            <area target="_blank" 
+                  alt="Ambattur Bus Depot" 
+                  title="Ambattur Bus Depot" 
+                  href="bus.html" 
+                  coords="700,250,750,300" 
+                  shape="rect">
+
+            <area target="_blank" 
+                  alt="LandMark" 
+                  title="LandMark" 
+                  href="land.html" 
+                  coords="900,350,950,400" 
+                  shape="rect">
+
+        
+
+        </map>
+    </center>
 </body>
 </html>
-
-
-clg.html
-
+```
+### IT park HTML
+```html
 <html>
     <head>
-        <title>MGR GOVT COLLEGE</title>
+        <title>IT park</title>
     </head>
-    <body>
-        <h>MGR GOVT COLLEGE</h>
-        <p>  Dr.M.G.R. Government Arts and Science College for Women, Villupuram was established in the year 2017, in memory of Late Chief Minister of Tamil Nadu, Bharat Ratna, Dr. M.G.Ramachandran. Affiliated to the Thiruvalluvar University, the College aims to impart knowledge and holistic development to aspiring young women especially from the socially and economically backward classes of the society. Standing by its moto "ulluvadhellam uyarvullal" meaning  whatever you ponder let your aim be lofty still, the college has created a niche for itself in a very short span of time. With over 1400 students the college offers a wide range of undergraduate programs in Science, Arts and Humanities.</p>
+    <body bgcolor="white" align="center">
+        <h2 align="center">
+            <font color="black"><b>Spectrum Mall</b></font>
+        </h2>
+        <hr size="3" color="black">
+        <img src="itpark.jpg" usemap="#IT park" width="900" height="500" >
+        <p align="justify" style="line-height: 1.5;">
+            <font face="Georgia" size="5"> 
+                Ambattur IT Park (Ambit IT Park) is a Grade-A tech campus in Ambattur Industrial Estate, Chennai. It delivers 1+ million sq. ft. of workspace, backed by multi-level parking, 24×7 power, and strong transport connectivity. It’s a cost-efficient alternative to OMR, attracting IT, ITES, and data-center players looking for scalable, no-nonsense infrastructure.
+        </p>
     </body>
-</html>
 
-lake.html
-
+```
+### Bus HTML
+```html
 <html>
     <head>
-        <title>PANAMPET LAKE</title>
+        <title>
+            My Home Town
+        </title>
     </head>
-    <body>
-        <h>PANAMPET LAKE</h>
-        <p>Panampet Lake is a lake located in Viluppuram, Tamil Nadu, India. It is known for its biodiversity and attracts numerous bird species, making it a popular spot for birdwatching. 
-Location and overview
-Location: The lake is in the Viluppuram district of Tamil Nadu. It is a well-known landmark in the area, and a guest house is located nearby.  </p>
+    <body bgcolor="white" align="center">
+        <h2 align="center">
+            <font color="black"><b>Ambattur Bus Stand</b></font>
+        </h2>
+        <hr size="3" color="black">
+        <img src="bus.jpg" usemap="#My Home Town" width="900" height="500" >
+        <p align="justify" style="line-height: 1.5;">
+            <font face="Georgia" size="5"> 
+            Ambattur Bus Stand is a high-traffic mobility node that streamlines connectivity across Chennai with consistent, high-frequency bus operations. It’s a go-to access point for daily riders, students, and local shoppers, enabling seamless movement to key corridors like Ayanavaram, Periyar Nagar, and Purasaiwalkam. The hub stays active throughout the day and supports core commuter needs with essential passenger amenities. Its strategic location and strong route density position it as a critical enabler of hassle-free, community-wide transit flow.
+        </p>
     </body>
 </html>
-
-park.html
-
+```
+### Rail HTML 
+```html
 <html>
     <head>
-        <title> THENDRAL PARK</title>
+        <title>
+            My Home Town
+        </title>
     </head>
-    <body>
-        <h>THENDRAL PARK</h>
-        <p> Thendral Park is an inn located in Villupuram, Tamil Nadu. It is not a public park, but a lodging facility. 
-Key details about Thendral Park Inn:
-Location: It is situated on Hospital Road, within the city limits of Villupuram, and is easily accessible from both the highway and the railway station.
-Facilities: The guest house offers air-conditioned, soundproof family rooms with a flat-screen TV and a private bathroom. Other amenities include free Wi-Fi, a 24-hour front desk, and an elevator.</p>
+    <body bgcolor="white" align="center">
+        <h2 align="center">
+            <font color="black"><b>Perambur Railway Station</b></font>
+        </h2>
+        <hr size="3" color="black">
+        <img src="rail.jpg" usemap="#My Home Town" width="900" height="500" >
+        <p align="justify" style="line-height: 1.5;">
+            <font face="Georgia" size="5"> 
+            Ambattur Railway Station is a key suburban node in Chennai’s rail network, positioned on the Chennai Central–Arakkonam line and catering to a heavy daily commuter base. The station drives strong intra-city and inter-city connectivity with its wide platforms, steady train frequency, and streamlined passenger flow. Its location near major residential and industrial zones amplifies its utility, making it a critical mobility gateway for the Ambattur region.    
+        </p>
     </body>
-</html>
-
-rs.html
-
+</html> 
+```
+### Land Html
+```html
 <html>
     <head>
-        <title>VILLUPURAM RAILWAY STATION</title>
+        <title>My Home Town</title>
     </head>
-    <body>
-        <h>VILLUPURAM RAILWAY STATION</h>
-        <p>Villupuram Junction (VM) is a major and busy railway station in Tamil Nadu that serves as a vital interchange for trains connecting Chennai to the southern and central parts of the state. As of June 2024, the station was undergoing redevelopment under the Amrit Bharat Scheme to enhance its amenities and infrastructure. 
-Key features
-Connectivity: Villupuram is a crucial junction where train lines diverge, connecting to various parts of South India. It is a major hub for trains going to and from Chennai, Tiruchirappalli, Ramanathapuram, and other southern destinations. </p>
+    <body bgcolor="white" align="center">
+        <h2 align="center">
+            <font color="black"><b>MY HOME</b></font>
+        </h2>
+        <hr size="3" color="black">
+        <img src="land.jpg" alt="My Home" width="1100" height="500">
+        <p align="justify" style="line-height: 1.5;">
+            <font face="Georgia" size="5" color="black">
+                Rakki Cinemas, Ambattur, is a high-footfall entertainment hub positioned as a flagship neighborhood multiplex. It delivers a streamlined movie-going experience with modern projection, optimized seating, and crowd-responsive service ops. The venue anchors local weekend traffic and consistently drives strong consumer engagement across Ambattur and the surrounding micro-markets.
+            </font>
+        </p>
     </body>
 </html>
-
-temple.html
-
-<html>
-    <head>
-        <title>VALEESHWARAR TEMPLE</title>
-    </head>
-    <body>
-        <h>VALEESHWARAR TEMPLE</h>
-        <p> The Aadhi Valeeswarar Temple in Villupuram is a Shiva temple known for its association with the mythical Vanara king, Vali, from the epic Ramayana. Located in the Poonthottam area, the temple has ancient origins and has been renovated over time. 
-Key details about the temple:
-Deity: Lord Shiva, worshipped as Aadhi Valeeswarar. The name reflects the legend that the mythical Vanara King, Vali, worshipped Shiva at this location.</p>
-    </body>
-</html>
-
 ```
 
 ## OUTPUT
 
-![alt text](<Screenshot 2025-10-15 194003.png>)
-![alt text](<Screenshot 2025-10-15 194055.png>)
-![alt text](<Screenshot 2025-10-15 194156.png>)
-![alt text](<Screenshot 2025-10-15 194218.png>)
-![alt text](<Screenshot 2025-10-15 194241.png>)
-![alt text](<Screenshot 2025-10-15 194340.png>)
+<img width="1856" height="999" alt="image" src="https://github.com/user-attachments/assets/f513bae4-41bb-4637-91c4-05c798c01e2d" />
+
+<img width="1853" height="993" alt="image" src="https://github.com/user-attachments/assets/8c85777b-d220-4d7d-bc80-cab8b7187a6c" />
+
+<img width="1858" height="1000" alt="image" src="https://github.com/user-attachments/assets/cc8af013-1390-4a15-b8e3-51ff3fdc5896" />
+
+<img width="1855" height="1008" alt="image" src="https://github.com/user-attachments/assets/ffa2ba76-c9da-4958-8df6-e22270718eea" />
+
+
+
+
+
+
+
+
+
 
 
 ## RESULT
